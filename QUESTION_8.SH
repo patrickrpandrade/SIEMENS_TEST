@@ -9,4 +9,3 @@ while read line; do
 	echo "out" >> servers_version.txt	
 done < "file"
 	
-	
