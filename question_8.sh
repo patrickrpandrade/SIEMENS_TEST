@@ -1,6 +1,6 @@
 #!/bin/bash
 file="$1"
-while read line; do
+while IFS= read -r linha; do
 	server=$line
 	server_version=$(ssh myuser@server 'uname-a')
 	ip_server=$(dig 'server +short')
