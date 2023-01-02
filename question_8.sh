@@ -7,5 +7,5 @@ while read line; do
 	now=$(date +'%T %D')
 	out="$now $server $ip_server $server_version"
 	echo "out" >> servers_version.txt	
-done < "file"
+done < $file
 	
