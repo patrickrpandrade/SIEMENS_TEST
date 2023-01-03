@@ -1,7 +1,7 @@
 #!/bin/bash
 input_file="$1"
 output_file="/tmp/output_1.txt"
-echo "" > ${output_file}
+> ${output_file}
 while IFS= read -r line
 do
   if [[ $line == "#"* ]]
